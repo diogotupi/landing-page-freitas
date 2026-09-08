@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem clamp(1.25rem, 4vw, 3rem);
+  pointer-events: none;
+}
+
+.brand,
+.desktopCta {
+  pointer-events: auto;
+}
+
+.logo {
+  width: 72px;
+  height: auto;
+  filter: drop-shadow(0 0 12px color-mix(in srgb, var(--red) 25%, transparent));
+}
+
+.desktopCta {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .desktopCta {
+    display: inline-flex;
+    min-height: 42px;
+    padding: 0.55rem 1rem;
+    font-size: 0.68rem;
+  }
+}

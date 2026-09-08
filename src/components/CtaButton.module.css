@@ -1,0 +1,82 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0.9rem 1.5rem;
+  border: 1px solid transparent;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-indent: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition:
+    transform 0.25s var(--ease-out),
+    box-shadow 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+  will-change: transform;
+}
+
+.primary {
+  background: var(--red);
+  color: #fff;
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--red) 35%, transparent);
+}
+
+.primary:hover {
+  box-shadow: var(--glow);
+}
+
+.ghost {
+  background: transparent;
+  color: inherit;
+  border-color: color-mix(in srgb, currentColor 35%, transparent);
+}
+
+.ghost:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.shine {
+  position: absolute;
+  inset: -40% auto -40% -30%;
+  width: 40%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.28),
+    transparent
+  );
+  transform: skewX(-18deg) translateX(-120%);
+  pointer-events: none;
+}
+
+.btn:hover .shine {
+  animation: shine 0.85s var(--ease-out);
+}
+
+.label {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes shine {
+  to {
+    transform: skewX(-18deg) translateX(320%);
+  }
+}
+
+html.reduce-motion .btn {
+  transition: none;
+}
+
+html.reduce-motion .btn:hover .shine {
+  animation: none;
+}

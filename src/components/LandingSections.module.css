@@ -79,7 +79,16 @@
   }
 
   .heroMeta {
-    text-align: left;
+    text-align: center;
+  }
+
+  .heroMetaItem {
+    justify-items: center;
+  }
+
+  .heroMicro {
+    margin-inline: auto;
+    text-align: center;
   }
 }
 

@@ -38,35 +38,48 @@
 
 @media (max-width: 859px) {
   .hero {
-    align-items: start;
+    align-items: end;
   }
 
   .heroPhoto {
-    height: 270px !important;
+    height: 100% !important;
     width: 100% !important;
     object-fit: cover;
-    object-position: 72% 30%;
+    object-position: 50% 18%;
     opacity: 1;
     -webkit-mask-image: none;
     mask-image: none;
   }
 
   .heroCopy {
-    width: 100%;
+    width: min(100%, 34rem);
     margin-top: 0;
-    padding: 1.5rem 1.25rem 0;
-    border-left: 1px solid rgb(245 241 240 / 28%);
-    background: var(--near-black) !important;
+    padding: 2rem 1.25rem 3rem;
+    border-left: 0;
+    background: transparent !important;
     backdrop-filter: none;
     z-index: 3;
+    text-align: center;
   }
 
   .heroGrid {
-    padding-top: 140px;
+    padding-top: 0;
+    align-items: end;
+    justify-items: center;
   }
 
   .heroShade {
-    background: linear-gradient(180deg, transparent 65%, rgb(35 30 30 / 48%) 100%);
+    background:
+      linear-gradient(180deg, rgb(35 30 30 / 24%) 0%, rgb(35 30 30 / 48%) 34%, rgb(35 30 30 / 92%) 100%),
+      linear-gradient(90deg, rgb(35 30 30 / 22%) 0%, transparent 50%, rgb(35 30 30 / 22%) 100%);
+  }
+
+  .hero .ctaRow {
+    justify-content: center;
+  }
+
+  .heroMeta {
+    text-align: left;
   }
 }
 

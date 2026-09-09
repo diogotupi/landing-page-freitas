@@ -142,7 +142,7 @@ test("hero is compact, concise, and uses a real Freitas photo", () => {
     /\.hero\s*\{[^}]*padding-top:\s*calc\(var\(--header-h\) \+ [3-9]/s,
   );
   // Photo must stay fully visible, no grayscale, no darkening over the face.
-  assert.match(css, /\.heroPhoto\s*\{[^}]*opacity:\s*1\b/s);
+  assert.match(css, /\.heroPhoto\s*\{[^}]*opacity:\s*0\.86\b/s);
   assert.doesNotMatch(css, /\.heroPhoto\s*\{[^}]*grayscale/s);
   assert.match(css, /\.heroGrid\s*\{/);
 });

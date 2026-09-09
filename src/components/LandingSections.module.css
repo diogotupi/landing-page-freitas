@@ -51,10 +51,50 @@
 }
 
 .heroHeadline {
-  max-width: 9ch;
+  max-width: 12ch;
   margin-bottom: 0.85rem;
-  font-size: clamp(3.1rem, 11vw, 5rem);
-  text-wrap: balance;
+  font-size: clamp(3.1rem, 8vw, 5.2rem);
+  line-height: 0.9;
+  letter-spacing: -0.015em;
+  text-wrap: pretty;
+}
+
+.heroHeadlineLine,
+.heroHeadlineAccent {
+  display: block;
+}
+
+.heroHeadlineLine {
+  font-weight: 500;
+}
+
+.heroHeadlineAccent {
+  margin-top: 0.18em;
+  color: var(--red);
+}
+
+.heroHeadline :global(*) {
+  animation: heroLineIn 0.8s var(--ease-out) both;
+}
+
+.heroHeadlineAccent {
+  animation-delay: 100ms !important;
+}
+
+@keyframes heroLineIn {
+  from {
+    opacity: 0;
+    transform: translateY(0.35em);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+:global(html.reduce-motion) .heroHeadlineLine,
+:global(html.reduce-motion) .heroHeadlineAccent {
+  animation: none;
 }
 
 .heroLede {
@@ -75,6 +115,7 @@
 .heroCta {
   min-height: 3.5rem;
   padding-inline: 1.45rem;
+  font-size: 0.9rem;
   box-shadow: 0 16px 34px rgb(204 0 30 / 24%);
 }
 
@@ -147,7 +188,8 @@
   }
 
   .heroHeadline {
-    font-size: clamp(3.4rem, 5.4vw, 4.6rem);
+    max-width: 13ch;
+    font-size: clamp(3.6rem, 5vw, 5.1rem);
   }
 
   .heroCopy {
@@ -156,6 +198,11 @@
 }
 
 @media (max-width: 520px) {
+  .heroHeadline {
+    max-width: 11ch;
+    font-size: clamp(3rem, 13vw, 4.2rem);
+  }
+
   .heroMeta {
     gap: 0.5rem;
   }

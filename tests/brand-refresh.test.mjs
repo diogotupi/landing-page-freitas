@@ -115,10 +115,10 @@ test("copy is short: headlines under 50 chars, paragraphs under 170", () => {
 test("hero is compact, concise, and uses a real Freitas photo", () => {
   const content = readFileSync("src/content/nucoe.ts", "utf8");
   assert.match(content, /eyebrow:\s*"NUCOE \| Formação ao vivo"/);
-  assert.match(content, /headline:\s*"Sua empresa sabe quem é\?"/);
+  assert.match(content, /headline:\s*"Não importa o problema, a liderança é a solução\."/);
   assert.match(
     content,
-    /Construa Propósito, Valores e Princípios para orientar pessoas e decisões\./,
+    /subheadline:\s*"Lidere-se\."/,
   );
 
   const sections = readFileSync("src/components/LandingSections.tsx", "utf8");

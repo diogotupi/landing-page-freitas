@@ -49,9 +49,25 @@ export function LandingSections() {
             </Reveal>
             <Reveal delayMs={240}>
               <div className={styles.ctaRow}>
-                <CtaButton href={checkout}>{nucoe.ctas.primary}</CtaButton>
+                <CtaButton href={checkout} className={styles.heroCta}>
+                  {nucoe.ctas.primary}
+                </CtaButton>
               </div>
-              <p className="micro">{micro}</p>
+              <div className={styles.heroMeta}>
+                <span className={styles.heroMetaItem}>
+                  <strong>2 noites</strong>
+                  <small>formação ao vivo</small>
+                </span>
+                <span className={styles.heroMetaItem}>
+                  <strong>Presencial + Zoom</strong>
+                  <small>você escolhe o formato</small>
+                </span>
+                <span className={styles.heroMetaItem}>
+                  <strong>Vagas limitadas</strong>
+                  <small>turma ao vivo</small>
+                </span>
+              </div>
+              <p className={`micro ${styles.heroMicro}`}>{micro}</p>
             </Reveal>
           </div>
         </div>

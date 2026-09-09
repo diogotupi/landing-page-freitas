@@ -36,9 +36,8 @@ export const nucoe = {
 
   hero: {
     eyebrow: "NUCOE | Formação ao vivo",
-    headline: "Sua empresa sabe quem é?",
-    subheadline:
-      "Construa Propósito, Valores e Princípios para orientar pessoas e decisões.",
+    headline: "Não importa o problema, a liderança é a solução.",
+    subheadline: "Lidere-se.",
   },
 
   problem: {

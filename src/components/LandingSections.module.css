@@ -15,12 +15,12 @@
   bottom: auto !important;
   /* Portrait source is narrower than the viewport, so widen the box past the
      right edge to push Freitas right; the headline then lands on the wall. */
-  width: 140% !important;
+  width: 132% !important;
   max-width: none;
   right: auto !important;
   object-fit: cover;
-  object-position: 50% 0%;
-  opacity: 1;
+  object-position: 82% 0%;
+  opacity: 0.86;
   /* Mask the photo itself so it dissolves before the copy, whatever its brightness. */
   -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
   mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
@@ -34,6 +34,14 @@
   background:
     linear-gradient(90deg, rgb(35 30 30 / 90%) 0%, rgb(35 30 30 / 54%) 43%, transparent 72%),
     linear-gradient(180deg, rgb(35 30 30 / 78%) 0%, transparent 30%, rgb(35 30 30 / 36%) 100%);
+}
+
+@media (max-width: 859px) {
+  .heroShade {
+    background:
+      linear-gradient(90deg, rgb(35 30 30 / 96%) 0%, rgb(35 30 30 / 82%) 48%, rgb(35 30 30 / 24%) 100%),
+      linear-gradient(180deg, rgb(35 30 30 / 62%) 0%, rgb(35 30 30 / 18%) 42%, rgb(35 30 30 / 94%) 72%);
+  }
 }
 
 .heroGrid {

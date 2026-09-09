@@ -6,7 +6,6 @@ import { CtaButton } from "@/components/CtaButton";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { NucoeDiagram } from "@/components/NucoeDiagram";
 import { Reveal } from "@/components/Reveal";
-import { TextScramble } from "@/components/TextScramble";
 import {
   nucoe,
   resolveCheckoutHref,
@@ -37,10 +36,10 @@ export function LandingSections() {
               <p className="eyebrow">{nucoe.hero.eyebrow}</p>
             </Reveal>
             <Reveal delayMs={100}>
-              <TextScramble
-                text={nucoe.hero.headline}
-                className={`headline ${styles.heroHeadline}`}
-              />
+              <h1 className={`headline ${styles.heroHeadline}`}>
+                <span className={styles.heroHeadlineLine}>Não importa o problema,</span>
+                <span className={styles.heroHeadlineAccent}>A liderança é a solução.</span>
+              </h1>
             </Reveal>
             <Reveal delayMs={180}>
               <p className={`lede ${styles.heroLede}`}>

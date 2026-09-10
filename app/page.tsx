@@ -97,7 +97,7 @@ export default function Home() {
 
       <section id="home" className="hero">
         <div className="hero-grid" /><div className="hero-lines" />
-        <div className="hero-copy motion"><p className="eyebrow"><span /> Centro de excelência em treinamento humano</p><h1>Forje sua<br /><em>melhor versão.</em></h1><p className="hero-text">Disciplina, estratégia e mentalidade de elite para quem escolheu viver e liderar acima da média.</p><a href="#quem-somos" className="button-primary">Conheça o Instituto <ArrowDown size={17} /></a></div>
+        <div className="hero-copy motion"><p className="eyebrow"><span /> Centro de excelência em treinamento humano</p><h1 className="hero-title">Não importa o problema,<br /><em>liderar é a solução</em></h1><p className="hero-subtitle">Lidere-se</p><a href="#quem-somos" className="button-primary">Conheça o Instituto <ArrowDown size={17} /></a></div>
         <div className="hero-stamp"><strong>2630</strong><span>MENTE<br />CORPO<br />PROPÓSITO</span></div>
         <a className="scroll-cue" href="#quem-somos">Scroll para explorar <ArrowDown size={14} /></a>
       </section>

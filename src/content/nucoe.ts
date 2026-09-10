@@ -11,15 +11,15 @@ export type FaqItem = {
 
 export const nucoe = {
   brand: "Instituto 2630",
-  productName: "NUCOE",
-  productFull: "Núcleo Organizacional da Empresa",
+  productName: "Cultura de Elite",
+  productFull: "Formação Cultura de Elite",
 
   /** Placeholder. Troque pelo link Hotmart, Kiwify ou checkout escolhido. */
   checkoutUrl: "",
 
   event: {
-    formatLabel: "2 noites de 4 horas",
-    platform: "Presencial e Zoom simultaneamente",
+    formatLabel: "2 dias • 4 horas por dia • 8 horas totais",
+    platform: "Online e ao vivo via Zoom",
     dateLabel: "[DATA A CONFIRMAR]",
     timeLabel: "[HORÁRIO A CONFIRMAR]",
     locationLabel: "[LOCAL A CONFIRMAR]",
@@ -29,26 +29,27 @@ export const nucoe = {
   priceLabel: "[PREÇO A DEFINIR]",
 
   ctas: {
-    primary: "Quero construir o NUCOE",
-    secondary: "Garantir minha vaga",
-    offer: "Garantir minha vaga",
+    primary: "Quero aprender a construir a cultura da minha empresa",
+    secondary: "Quero construir meu NUCOE",
+    offer: "Quero construir a essência da cultura da minha empresa",
   },
 
   hero: {
-    eyebrow: "NUCOE | Formação ao vivo",
-    headline: "Não importa o problema, a liderança é a solução.",
-    subheadline: "Lidere-se.",
+    eyebrow: "CULTURA DE ELITE | FORMAÇÃO AO VIVO",
+    headline: "Sem cultura, você se torna funcionário do seu colaborador.",
+    subheadline:
+      "Aprenda a construir a essência da cultura da sua empresa para criar uma referência comum capaz de orientar líderes, decisões e comportamentos.",
   },
 
   problem: {
-    headline: "Treinar sem essência é começar pelo fim.",
-    body: "Vendas, gestão e liderança só funcionam quando o time sabe o que está protegendo. Sem isso, há atividade, mas não há unidade.",
+    headline: "Sua empresa depende demais de você para funcionar?",
+    body: "Falhas na execução, decisões que sempre voltam para o dono e valores que não orientam comportamento revelam uma cultura sem estrutura.",
   },
 
   idea: {
-    eyebrow: "A essência antes das práticas",
-    headline: "O que está na sua cabeça vira referência.",
-    intro: "Três elementos que precisam funcionar juntos.",
+    eyebrow: "O plano",
+    headline: "Em 8 horas, você começa a estruturar a essência da cultura da sua empresa.",
+    intro: "Propósito, Valores e Princípios organizados como base do NUCOE.",
     pillars: [
       {
         title: "Propósito",
@@ -66,169 +67,166 @@ export const nucoe = {
         detail: "Critérios claros para decisões e consequências.",
       },
     ],
-    closing: "Produtos mudam. Estratégias evoluem. O núcleo permanece.",
+    closing: "A essência cria uma referência comum para a empresa.",
   },
 
   bridge: {
-    headline: "Sob pressão, ninguém espera ordem.",
-    body: "Nas Operações Especiais, identidade e princípios compartilhados fazem pessoas diferentes agirem com unidade. Freitas traduz isso para quem lidera uma empresa.",
+    headline: "O BOPE já nasceu caveira. E isso ensina algo fundamental sobre cultura.",
+    body: "Antes da ação existe uma essência. O Instituto 2630 traduz aprendizados das Operações Especiais para a cultura e a realidade empresarial.",
   },
 
   deliverables: {
-    headline: "Você sai com o núcleo em construção.",
-    intro: "Durante a formação, você registra o que hoje está disperso ou só na sua cabeça.",
+    headline: "Você não termina apenas com anotações.",
+    intro: "Você começa a organizar a estrutura da essência da cultura da sua empresa.",
     items: [
-      "O propósito da empresa",
-      "Os valores essenciais",
-      "Primeira estrutura de princípios",
-      "Visão integrada do NUCOE",
-      "Diagnóstico das práticas atuais",
-      "Próximos passos com sócios e líderes",
+      "Propósito separado de objetivo",
+      "Valores que realmente orientam a organização",
+      "Princípios transformados em regras claras",
+      "Estrutura inicial do NUCOE",
+      "Conexão com experiências reais da empresa",
+      "Movimento pós-formação definido",
     ],
   },
 
   method: {
-    headline: "Da identidade à decisão.",
-    intro: "Primeiro, quem a empresa é. Depois, como isso orienta pessoas e práticas.",
+    headline: "Ensinar. Construir. Aplicar.",
+    intro: "Do fundamento à ferramenta, com aplicação na realidade da empresa.",
     steps: [
       {
-        title: "Quem somos",
-        detail: "A razão de existir e as convicções inegociáveis.",
+        title: "Ensinar fundamentos",
+        detail: "Compreender cultura, essência, Propósito, Valores e Princípios.",
       },
       {
-        title: "Como lideramos",
-        detail: "O que se espera dos líderes nas relações e nos exemplos.",
+        title: "Conectar experiências",
+        detail: "Relacionar os fundamentos aos desafios reais da empresa.",
       },
       {
-        title: "Como decidimos",
-        detail: "Critérios para escolhas sem resposta pronta.",
+        title: "Aplicar ferramentas",
+        detail: "Usar ferramentas para transformar reflexão em estrutura.",
       },
       {
-        title: "Como praticamos",
-        detail: "Rituais e processos que reforçam o núcleo.",
+        title: "Construir",
+        detail: "Organizar a essência da cultura como base do NUCOE.",
       },
       {
-        title: "Como crescemos",
-        detail: "Contratar, delegar e expandir sem perder a essência.",
+        title: "Consolidar e mover",
+        detail: "Discutir, consolidar e definir o próximo movimento pós-curso.",
       },
     ],
   },
 
   audience: {
-    headline: "Para quem lidera pessoas.",
+    headline: "Para quem carrega responsabilidade por pessoas e resultados.",
     for: [
-      "Empresários com equipe",
-      "Sócios que precisam se alinhar",
-      "Líderes com responsabilidade sobre cultura",
-      "Empresas em crescimento perdendo unidade",
-      "Donos sobrecarregados de decisões",
+      "Empresários e empreendedores",
+      "Gestores e líderes de equipe",
+      "Quem decide e responde por resultados",
+      "Quem percebe que cobrar mais não cria alinhamento",
+      "Quem está cansado de resolver tudo pessoalmente",
     ],
     against: [
-      "Quem busca só motivação",
-      "Quem quer assistir passivamente",
+      "Quem busca uma palestra de motivação",
       "Quem quer uma cultura pronta para copiar",
-      "Quem espera resolver tudo em dois encontros",
+      "Quem espera implementar tudo em 8 horas",
+      "Quem não pretende aplicar na empresa",
     ],
   },
 
   guide: {
     headline: "Quem conduz",
     name: "Freitas",
-    bio: "Operações Especiais, empreendedorismo e a criação do Instituto 2630. Freitas conduz com perguntas e ferramentas. Ele não define sua identidade por você.",
+    bio: "O Instituto 2630 traduz aprendizados da cultura do BOPE e das Operações Especiais para o ambiente empresarial. A experiência vem do BOPE. A aplicação acontece na empresa.",
     imageSrc: "/images/freitas-guide.png",
   },
 
   proof: {
     eyebrow: "Quem aplicou",
-    headline: "Clareza que aparece na rotina.",
-    intro: "Depoimentos modelo. Validar ou substituir antes da publicação.",
+    headline: "Provas de aplicação empresarial.",
+    intro: "Cases e depoimentos específicos sobre cultura, alinhamento, liderança e decisão serão selecionados.",
     testimonials: [
       {
-        quote:
-          "Eu cobrava alinhamento, mas nunca tinha dito o que deveria orientar as decisões. Agora está no papel.",
-        name: "DEPOIMENTO MODELO 1",
-        role: "Validar ou substituir",
+        quote: "Case de cultura, alinhamento ou decisão será inserido aqui.",
+        name: "CASE A SELECIONAR",
+        role: "Evidência empresarial",
       },
       {
-        quote:
-          "Cultura parecia abstrato. Ligando propósito, valores e princípios ao dia a dia, ficou claro o que mudar.",
-        name: "DEPOIMENTO MODELO 2",
-        role: "Validar ou substituir",
+        quote: "Depoimento específico sobre aplicação do NUCOE será inserido aqui.",
+        name: "DEPOIMENTO A SELECIONAR",
+        role: "Evidência empresarial",
       },
       {
-        quote:
-          "Não saí com uma frase pronta. Saí com um primeiro desenho do nosso núcleo e direção para seguir com meus sócios.",
-        name: "DEPOIMENTO MODELO 3",
-        role: "Validar ou substituir",
+        quote: "Prova relacionada a liderança, unidade ou comportamento será inserida aqui.",
+        name: "PROVA A SELECIONAR",
+        role: "Evidência empresarial",
       },
     ] satisfies Testimonial[],
   },
 
   offer: {
-    headline: "Uma empresa que sabe quem é.",
+    headline: "Uma essência clara cria uma referência comum para a empresa.",
     includes: [
-      "2 noites consecutivas, 4 horas cada",
-      "Presencial ou pelo Zoom",
-      "Aplicação prática guiada por Freitas",
-      "Ferramenta para construção do NUCOE",
+      "2 dias ao vivo pelo Zoom",
+      "4 horas por dia, 8 horas totais",
+      "Aplicação prática guiada pelo Instituto 2630",
+      "Estrutura da essência: Propósito, Valores e Princípios",
     ],
     microcopy: "Escolha o formato na inscrição.",
   },
 
   bonus: {
-    headline: "O encontro termina. A construção continua.",
-    body: "Após o ao vivo, você recebe o treinamento gravado “A Essência da Cultura do BOPE para sua Empresa” como biblioteca de apoio.",
+    headline: "A experiência vem do BOPE. A aplicação acontece na empresa.",
+    body: "As Operações Especiais são fonte de aprendizagem sobre cultura, unidade, responsabilidade e decisão. O trabalho da formação é empresarial.",
   },
 
   faq: [
     {
-      question: "Preciso ter uma empresa grande?",
-      answer: "Não. Basta ter equipe e decisões de liderança para tomar.",
+      question: "É um curso de desenvolvimento pessoal?",
+      answer: "Não. A comunicação e a entrega estão centradas na construção da essência da cultura da empresa por meio do NUCOE.",
     },
     {
-      question: "Posso participar com meu sócio?",
-      answer: "Sim. Costuma deixar a conversa mais produtiva.",
+      question: "Preciso já ter missão, visão e valores definidos?",
+      answer: "Não. A formação parte dos fundamentos e conduz a construção de Propósito, Valores e Princípios.",
     },
     {
-      question: "Serve para líderes que não são donos?",
-      answer: "Sim, desde que influenciem decisões e práticas da empresa.",
+      question: "É um treinamento militar?",
+      answer: "Não. As Operações Especiais são fonte de aprendizagem. A aplicação é empresarial.",
     },
     {
-      question: "Preciso ter feito o Pé na Porta ou CEO-L?",
-      answer: "Não. O NUCOE pode ser sua primeira formação com o Instituto.",
+      question: "Vou sair com a cultura inteira implantada?",
+      answer: "Não. A formação inicia e estrutura a essência. A implementação exige um nível posterior de desenvolvimento.",
     },
     {
-      question: "Presencial ou Zoom?",
-      answer: "Você escolhe. Os dois formatos acontecem ao mesmo tempo.",
+      question: "Há certificado?",
+      answer: "Não. O entregável é a estrutura da essência da cultura: Propósito, Valores e Princípios.",
     },
     {
-      question: "Haverá gravação?",
-      answer: "A formação é ao vivo. Gravação será confirmada com a turma.",
+      question: "Como funciona?",
+      answer: "Ao vivo pelo Zoom, em dois dias, com quatro horas de formação por dia.",
     },
     {
-      question: "O curso gravado está incluso?",
-      answer: "Sim, como bônus liberado após a participação ao vivo.",
+      question: "O que será construído?",
+      answer: "A estrutura inicial da essência da cultura da empresa, organizada em Propósito, Valores, Princípios e NUCOE.",
     },
     {
-      question: "O que preciso preparar?",
-      answer: "Honestidade sobre a empresa. Se tiver, os materiais atuais de missão e valores.",
+      question: "Preciso levar materiais da empresa?",
+      answer: "Não é obrigatório. Se você tiver materiais atuais de missão, visão ou valores, eles podem ajudar na aplicação.",
     },
     {
-      question: "Vou sair com meu NUCOE pronto?",
-      answer: "Você sai com a base construída. O refinamento continua com seus sócios.",
+      question: "O NUCOE fica pronto em 8 horas?",
+      answer: "Você começa a estruturar a essência. O refinamento e a implementação continuam depois da formação.",
     },
     {
-      question: "Isso resolve a cultura da empresa?",
-      answer: "Nenhuma formação resolve sozinha. O NUCOE dá a estrutura. O resultado depende da aplicação.",
+      question: "Para quem é essa formação?",
+      answer: "Para empresários, empreendedores, gestores e líderes responsáveis por pessoas e resultados.",
     },
   ] satisfies FaqItem[],
 
   close: {
-    headline: "Cada decisão ensina\nno que sua empresa acredita.",
-    body: "Deixe isso ao acaso ou dê clareza ao seu time.\nConstrua o núcleo.",
+    headline: "Toda empresa terá uma cultura.\nDecida como ela será construída.",
+    body: "Construa conscientemente a essência da cultura da sua empresa.\nComece pelo NUCOE.",
   },
 
-  mother: "A cultura começa quando a empresa descobre quem é.",
+  mother: "Sem cultura, você se torna funcionário do seu colaborador.",
 } as const;
 
 export type NucoeContent = typeof nucoe;

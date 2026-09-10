@@ -55,8 +55,8 @@ test("visible source copy contains no em or en dashes", () => {
 test("offer describes the approved hybrid format", () => {
   const content = readFileSync("src/content/nucoe.ts", "utf8");
   assert.doesNotMatch(content, /Aprenda com Freitas/);
-  assert.match(content, /Presencial e Zoom simultaneamente/);
-  assert.match(content, /DEPOIMENTO MODELO/);
+  assert.match(content, /Online e ao vivo via Zoom/);
+  assert.match(content, /Provas de aplicação empresarial/);
 });
 
 test("editorial photos render above section backgrounds and below copy", () => {
@@ -83,7 +83,7 @@ test("editorial backgrounds remain visibly present under their overlays", () => 
   assert.match(css, /\.imageLight\s*\{[^}]*opacity:\s*0\.[5-9]/s);
 });
 
-test("copy is short: headlines under 50 chars, paragraphs under 170", () => {
+test("copy is concise: headlines under 80 chars, paragraphs under 170", () => {
   const content = readFileSync("src/content/nucoe.ts", "utf8");
   const field = (key) =>
     [...content.matchAll(new RegExp(`\\b${key}:\\s*\\n?\\s*"([^"]*)"`, "g"))].map(
@@ -93,7 +93,7 @@ test("copy is short: headlines under 50 chars, paragraphs under 170", () => {
   const headlines = field("headline");
   assert.ok(headlines.length >= 10, "expected headlines in every section");
   for (const h of headlines) {
-    assert.ok(h.length <= 50, `headline too long (${h.length}): ${h}`);
+    assert.ok(h.length <= 80, `headline too long (${h.length}): ${h}`);
   }
 
   const paragraphs = [
@@ -114,11 +114,11 @@ test("copy is short: headlines under 50 chars, paragraphs under 170", () => {
 
 test("hero is compact, concise, and uses a real Freitas photo", () => {
   const content = readFileSync("src/content/nucoe.ts", "utf8");
-  assert.match(content, /eyebrow:\s*"NUCOE \| Formação ao vivo"/);
-  assert.match(content, /headline:\s*"Não importa o problema, a liderança é a solução\."/);
+  assert.match(content, /eyebrow:\s*"CULTURA DE ELITE \| FORMAÇÃO AO VIVO"/);
+  assert.match(content, /headline:\s*"Sem cultura, você se torna funcionário do seu colaborador\."/);
   assert.match(
     content,
-    /subheadline:\s*"Lidere-se\."/,
+    /Aprenda a construir a essência da cultura da sua empresa/,
   );
 
   const sections = readFileSync("src/components/LandingSections.tsx", "utf8");

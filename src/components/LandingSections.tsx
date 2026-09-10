@@ -37,8 +37,7 @@ export function LandingSections() {
             </Reveal>
             <Reveal delayMs={100}>
               <h1 className={`headline ${styles.heroHeadline}`}>
-                <span className={styles.heroHeadlineLine}>Não importa o problema,</span>
-                <span className={styles.heroHeadlineAccent}>A liderança é a solução.</span>
+                {nucoe.hero.headline}
               </h1>
             </Reveal>
             <Reveal delayMs={180}>
@@ -54,12 +53,12 @@ export function LandingSections() {
               </div>
               <div className={styles.heroMeta}>
                 <span className={styles.heroMetaItem}>
-                  <strong>2 noites</strong>
+                  <strong>2 dias</strong>
                   <small>formação ao vivo</small>
                 </span>
                 <span className={styles.heroMetaItem}>
-                  <strong>Presencial + Zoom</strong>
-                  <small>você escolhe o formato</small>
+                  <strong>Online + Zoom</strong>
+                  <small>ao vivo com a turma</small>
                 </span>
                 <span className={styles.heroMetaItem}>
                   <strong>Vagas limitadas</strong>
@@ -289,7 +288,7 @@ export function LandingSections() {
                 <strong>Quando:</strong> {nucoe.event.dateLabel} • {nucoe.event.timeLabel}
               </li>
               <li>
-                <strong>Local presencial:</strong> {nucoe.event.locationLabel}
+                <strong>Plataforma:</strong> {nucoe.event.platform}
               </li>
               {nucoe.offer.includes.map((item) => (
                 <li key={item}>{item}</li>

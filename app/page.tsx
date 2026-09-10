@@ -10,6 +10,7 @@ function FilmSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(false);
+  const [volume, setVolume] = useState(1);
   const [progress, setProgress] = useState(0);
 
   const togglePlay = () => {
@@ -32,11 +33,20 @@ function FilmSection() {
     setMuted(video.muted);
   };
 
+  const changeVolume = (value: number) => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.volume = value;
+    video.muted = value === 0;
+    setVolume(value);
+    setMuted(value === 0);
+  };
+
   return (
     <section className="film-section motion" aria-label="Instituto 2630 em ação">
       <div className="film-heading"><span>2630 · Em ação</span><h2>Não explicamos o limite. <em>Vivemos.</em></h2></div>
       <div className={`film-frame ${playing ? 'is-playing' : ''}`}>
-        <video ref={videoRef} poster="/video-poster.jpg" playsInline preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onTimeUpdate={event => { const video = event.currentTarget; setProgress(video.duration ? (video.currentTime / video.duration) * 100 : 0); }} onEnded={() => setPlaying(false)}>
+        <video ref={videoRef} poster="/video-poster.jpg" playsInline preload="metadata" onLoadedMetadata={event => { event.currentTarget.muted = false; event.currentTarget.volume = volume; }} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onTimeUpdate={event => { const video = event.currentTarget; setProgress(video.duration ? (video.currentTime / video.duration) * 100 : 0); }} onEnded={() => setPlaying(false)}>
           <source src="https://res.cloudinary.com/dc48hzb6b/video/upload/v1789065908/videoplayback_fede9h.mp4" type="video/mp4" />
         </video>
         <div className="film-shade" />
@@ -44,7 +54,10 @@ function FilmSection() {
         <div className="film-controls">
           <button onClick={togglePlay} aria-label={playing ? 'Pausar vídeo' : 'Reproduzir vídeo'}>{playing ? <Pause size={16} fill="currentColor" /> : <Play size={16} fill="currentColor" />}</button>
           <input className="film-timeline" type="range" min="0" max="100" step="0.1" value={progress} onChange={event => seek(Number(event.target.value))} style={{ '--progress': `${progress}%` } as React.CSSProperties} aria-label="Progresso do vídeo" />
-          <button onClick={toggleMute} aria-label={muted ? 'Ativar som' : 'Silenciar vídeo'}>{muted ? <VolumeX size={17} /> : <Volume2 size={17} />}</button>
+          <div className="film-volume-group">
+            <button onClick={toggleMute} aria-label={muted ? 'Ativar som' : 'Silenciar vídeo'}>{muted ? <VolumeX size={17} /> : <Volume2 size={17} />}</button>
+            <input className="film-volume" type="range" min="0" max="1" step="0.01" value={muted ? 0 : volume} onChange={event => changeVolume(Number(event.target.value))} style={{ '--volume': `${(muted ? 0 : volume) * 100}%` } as React.CSSProperties} aria-label="Volume do vídeo" />
+          </div>
         </div>
       </div>
     </section>

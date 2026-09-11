@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_BASE_PATH: /instituto-2630
+      NEXT_PUBLIC_BASE_PATH: /landing-page-freitas
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -27,11 +27,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - name: Fix asset paths for project Pages URL
-        run: |
-          for asset in about-training.jpg course-01.jpg course-02.jpg course-03.jpg course-04.jpg course-05.jpg course-06.jpg course-07.jpg course-08.jpg course-09.jpg course-10.jpg course-11.jpg course-12.jpg course-13.jpg course-14.jpg course-15.jpg course-16.jpg course-17.jpg course-18.jpg course-19.jpg course-20.jpg favicon.svg freitas-full.png freitas.png hero-training.jpg leadership-training.jpg logo-negativo.png logo-positivo.png video-poster.jpg wallace.png; do
-            find out -type f \( -name '*.html' -o -name '*.css' -o -name '*.js' \) -exec perl -pi -e "s#(?<!instituto-2630)/$asset#/instituto-2630/$asset#g" {} +
-          done
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out

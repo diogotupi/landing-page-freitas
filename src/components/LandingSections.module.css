@@ -59,13 +59,13 @@
     background: transparent !important;
     backdrop-filter: none;
     z-index: 3;
-    text-align: center;
+    text-align: left;
   }
 
   .heroHeadline {
     width: 100%;
     margin-inline: auto;
-    text-align: center;
+    text-align: left;
   }
 
   .heroGrid {
@@ -81,13 +81,12 @@
   }
 
   .hero :global(.ctaRow) {
-    justify-content: center !important;
+    justify-content: flex-start !important;
     width: 100%;
-    margin-inline: auto;
   }
 
   .heroCta {
-    margin-inline: auto;
+    margin-inline: 0;
   }
 
   .heroMeta {
@@ -99,8 +98,8 @@
   }
 
   .heroMicro {
-    margin-inline: auto;
-    text-align: center;
+    margin-inline: 0;
+    text-align: left;
   }
 }
 
@@ -127,12 +126,12 @@
   text-wrap: pretty;
 }
 
-.heroHeadlineLine,
+.heroHeadlineWhite,
 .heroHeadlineAccent {
   display: block;
 }
 
-.heroHeadlineLine {
+.heroHeadlineWhite {
   font-weight: 500;
 }
 
@@ -160,7 +159,7 @@
   }
 }
 
-:global(html.reduce-motion) .heroHeadlineLine,
+:global(html.reduce-motion) .heroHeadlineWhite,
 :global(html.reduce-motion) .heroHeadlineAccent {
   animation: none;
 }

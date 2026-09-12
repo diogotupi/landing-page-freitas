@@ -37,7 +37,9 @@ export function LandingSections() {
             </Reveal>
             <Reveal delayMs={100}>
               <h1 className={`headline ${styles.heroHeadline}`}>
-                {nucoe.hero.headline}
+                <span className={styles.heroHeadlineWhite}>Sem cultura, você se torna</span>{" "}
+                <span className={styles.heroHeadlineAccent}>funcionário</span>{" "}
+                <span className={styles.heroHeadlineWhite}>do seu colaborador.</span>
               </h1>
             </Reveal>
             <Reveal delayMs={180}>

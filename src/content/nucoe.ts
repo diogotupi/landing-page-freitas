@@ -127,7 +127,7 @@ export const nucoe = {
     against: [
       "Quem busca uma palestra de motivação",
       "Quem quer uma cultura pronta para copiar",
-      "Quem espera implementar tudo em 8 horas",
+      "Quem não acredita que cultura é a solução",
       "Quem não pretende aplicar na empresa",
     ],
   },
@@ -222,8 +222,8 @@ export const nucoe = {
   ] satisfies FaqItem[],
 
   close: {
-    headline: "Toda empresa terá uma cultura.\nDecida como ela será construída.",
-    body: "Construa conscientemente a essência da cultura da sua empresa.\nComece pelo NUCOE.",
+    headline: "A cultura nasce de 2 formas.",
+    body: "1. Criada, nutrida e protegida desde o início da empresa.\n2. Através das crenças e comportamentos dos seus colaboradores.\n\nVocê decide quem está no comando.",
   },
 
   mother: "Sem cultura, você se torna funcionário do seu colaborador.",
